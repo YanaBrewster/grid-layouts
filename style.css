@@ -123,3 +123,149 @@
 }
 
 /*Working on percentages is important for responsive design*/
+
+/*RESPONSIVE DESIGN*/
+
+.box{
+	height: 100px;
+	width: 100%;
+	float: left;
+}
+
+.logo{
+	width: 20%;
+}
+
+.nav{
+	width: 50%;
+}
+
+.box3{
+	width: 30%;
+}
+
+.text p {
+	width: 1000px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:800px){
+
+	body{
+		background-color: white;
+	}
+
+	.box{
+		float: none;
+		width: 100%;
+	}
+
+	.logo{
+		width: 100%;
+	}
+
+	.nav{
+		width: 100%;
+	}
+
+	.box3{
+		width: 100%;
+	}
+
+	.text p {
+		width: 600px;
+		text-align: left;
+		margin: 0 auto;
+	}
+
+	.colS12{
+	width: 100%;
+	}
+
+	.colS11{
+		width: 91.66%;
+	}
+
+	.colS10{
+		width: 83.33%;
+	}
+
+	.colS9{
+		width: 75%;
+	}
+
+	.colS8{
+	 	width: 66.66%;
+	}
+
+	.colS7{
+	 	width: 58.33%;
+	}
+
+	.colS6{
+		width: 50%;
+	}
+
+	.colS5{
+	 	width: 41.66%;
+	}
+
+	.colS4{
+		width: 33.33%;
+	}
+
+	.colS3{
+		width: 25%;
+	}
+
+	.colS2{
+	 	width: 16.67%;
+	}
+
+	.colS1{
+		width: 8.33%;
+	}
+
+}
+/*POSITIONING*/
+
+.static{
+	/*Static is the default and will just stack*/
+	position: static;
+}
+
+.relative{
+	position: relative;
+	width: 500px;
+	top: -100px;
+	left: 200px;
+}
+
+.fixed{
+	position: fixed;
+	top: 100px;
+	right: 20px;
+}
+
+.relative2{
+	position: relative;
+}
+
+.absoluteRight{ 
+	width: 200px;
+	min-height: 50px;
+	position: absolute;
+	right: 100px;
+	bottom: 10px;
+}
+
+.absoluteLeft{ 
+	width: 200px;
+	min-height: 50px;
+	position: absolute;
+	left: 100px;
+	bottom: 10px;
+}
