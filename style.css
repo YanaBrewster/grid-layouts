@@ -276,20 +276,5 @@
 	position: relative;
 }
 
-.absoluteRight{ 
-	width: 200px;
-	min-height: 50px;
-	position: absolute;
-	right: 100px;
-	bottom: 10px;
-}
-
-.absoluteLeft{ 
-	width: 200px;
-	min-height: 50px;
-	position: absolute;
-	left: 100px;
-	bottom: 10px;
-}
 
 
