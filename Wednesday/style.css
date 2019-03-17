@@ -24,6 +24,13 @@
 	margin: auto;
 	display: block;
 	padding-bottom: 20px;
+
+}
+
+#imageCol{
+	width: 70%;
+	margin: 0 auto;
+	display: block;
 }
 
 /*SECTIONS*/
@@ -228,8 +235,9 @@ p {
 
 @media screen and (min-width: 320px) {
 
+
 .hideM{
-	display: none;
+/*	visibility: hidden;*/
 }
 
 .col12{
@@ -289,7 +297,7 @@ p {
 @media screen and (min-width: 960px){
 
 .hideT{
-display: none;
+visibility: hidden;
 }
 
 .colT1{
@@ -345,6 +353,10 @@ width: 100%;
 /*DESKTOP RESPONSIVE*/
 
 @media screen and (min-width: 992px) {
+
+#imageCol{
+	width: 100%;
+}
 
 .colD12{
 width: 100%;
