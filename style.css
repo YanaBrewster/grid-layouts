@@ -108,12 +108,51 @@
 }
 
 .col2{
- 	width: 16.67%;
+ 	width: 16.66%;
 }
 
 .col1{
 	width: 8.33%;
 }
+
+/*OFFSET GRID*/
+
+.offset1 {
+  margin-left: 8.3333333333%; }
+
+.offset2 {
+  margin-left: 16.6666666667%; }
+
+.offset3 {
+  margin-left: 25%; }
+
+.offset4 {
+  margin-left: 33.3333333333%; }
+
+.offset5 {
+  margin-left: 41.6666666667%; }
+
+.offset6 {
+  margin-left: 50%; }
+
+.offset7 {
+  margin-left: 58.3333333333%; }
+
+.offset8 {
+  margin-left: 66.6666666667%; }
+
+.offset9 {
+  margin-left: 75%; }
+
+.offset10 {
+  margin-left: 83.3333333333%; }
+
+.offset11 {
+  margin-left: 91.6666666667%; }
+
+.offset12 {
+  margin-left: 100%; }
+
 
 /*ROW*/
 

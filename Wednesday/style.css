@@ -181,11 +181,11 @@ p {
     list-style: none;
 }
 
-.navigation ul:after{
+/*.navigation ul:after{
     display: block;
     content: '';
     clear: both;
-}
+}*/
 
 .navigation ul li{
     float: left;
@@ -226,7 +226,7 @@ p {
 
 /*MOBILE RESPONSIVE*/
 
-@media all and (min-width: 320px) {
+@media screen and (min-width: 320px) {
 
 .hideM{
 	display: none;
@@ -286,7 +286,7 @@ p {
 
 /*TABLET RESPONSIVE*/
 
-@media all and (min-width: 960px){
+@media screen and (min-width: 960px){
 
 .hideT{
 display: none;
@@ -340,9 +340,11 @@ width: 91.66%;
 width: 100%;
 }
 
+}
+
 /*DESKTOP RESPONSIVE*/
 
-@media all and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
 .colD12{
 width: 100%;
@@ -399,11 +401,11 @@ width: 8.33%;
     background-color: white;
 }
 
-.navigation ul:after{
+/*.navigation ul:after{
     display: inline-block;
     content: '';
     clear: both;
-}
+}*/
 
 .navigation ul li{
 	display: inline-block;
@@ -432,4 +434,6 @@ width: 8.33%;
 	text-align: center;
 	top: 0;
 	left: 0;
+}
+
 }
