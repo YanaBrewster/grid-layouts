@@ -3,19 +3,58 @@
 	margin: 0;
 	text-decoration: none;
 	list-style-type: none;
+	font-family: Georgia, serif;
 }
+
+/**, *:before, *:after{
+	box-sizing: inherit;
+}*/
+
+
 
 /*IMAGES*/
 
-#image1{
-	width: 80%;
+
+#logoimage{
+	text-align: center;
+}
+
+#image{
+	width: 100%;
 	margin: auto;
 	display: block;
+	padding-bottom: 20px;
+}
+
+/*SECTIONS*/
+
+.logo{
+	position: absolute;
+	bottom:2px;
+	left: 35%;
+}
+
+p {
+	text-align: left;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.banner{
+	height:150px;
+	position: relative;
+	text-align: center;
+	left: 0;
+}
+
+.pageContainer {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 /*COLOURS*/
 
-.purple {
+.purple {	
 	background-color: #9b59b6;
 }
 
@@ -68,13 +107,6 @@
 .col {
 	min-height: 100px;
 	float: left;
-	padding:;
-
-}
-
-.pageContainer {
-	max-width: 1000px;
-	margin: 0 auto;
 }
 
 .col12{
@@ -94,11 +126,11 @@
 }
 
 .col8{
- 	width: 66.66%;
+	width: 66.66%;
 }
 
 .col7{
- 	width: 58.33%;
+	width: 58.33%;
 }
 
 .col6{
@@ -106,7 +138,7 @@
 }
 
 .col5{
- 	width: 41.66%;
+	width: 41.66%;
 }
 
 .col4{
@@ -118,7 +150,7 @@
 }
 
 .col2{
- 	width: 16.67%;
+	width: 16.67%;
 }
 
 .col1{
@@ -135,144 +167,40 @@
 
 /*Working on percentages is important for responsive design*/
 
-/*RESPONSIVE DESIGN*/
 
-.box{
-	height: 100px;
-	width: 100%;
-	float: left;
+/*NAVIGATON*/
+
+.navigation{
+    width: 100%;
+    padding: 3px;
+    height: 30px;
+    background-color: black;
 }
 
-.logo{
-	width: 160px;
-	margin: 60px;
-	margin-left: 400px;
-
+.navigation ul{
+    list-style: none;
 }
 
-.box3{
-	width: 30%;
+.navigation ul:after{
+    display: block;
+    content: '';
+    clear: both;
 }
 
-.text p {
-	width: 1000px;
-	text-align: left;
-	margin: 0 auto;
-}
-
-.banner{
-	height:200px;
-	position: relative;
-	left: 0;
-}
-
-.content{
-	position: absolute;
-	bottom: 30px;
-}
-
-.navigation ul li {
-
-	float: left;
-    width: 25%;
+.navigation ul li{
+    float: left;
+    width: 30%;
     text-align: center;
-    padding-top: 20px;
-    margin: 0;
-} 
+}
 
-
-@media screen and (max-width:800px){
-
-	body{
-		background-color: white;
-	}
-
-	.box{
-		float: none;
-		width: 100%;
-	}
-
-	.box3{
-		width: 100%;
-	}
-
-	.text p {
-		width: 600px;
-		text-align: left;
-		margin: 0 auto;
-	}
-
-	.colS12{
-	width: 100%;
-	}
-
-	.colS11{
-		width: 91.66%;
-	}
-
-	.colS10{
-		width: 83.33%;
-	}
-
-	.colS9{
-		width: 75%;
-	}
-
-	.colS8{
-	 	width: 66.66%;
-	}
-
-	.colS7{
-	 	width: 58.33%;
-	}
-
-	.colS6{
-		width: 50%;
-	}
-
-	.colS5{
-	 	width: 41.66%;
-	}
-
-	.colS4{
-		width: 33.33%;
-	}
-
-	.colS3{
-		width: 25%;
-	}
-
-	.colS2{
-	 	width: 16.67%;
-	}
-
-	.colS1{
-		width: 8.33%;
-	}
-
-	.content{
-	 	text-align: center;
-	}	
-
-	.banner{
-		height: 50px;
-	}
-
-	.logo{
-	width: 160px;
-	margin-top: 0;
-	margin-left: 300px;  
-	}
-
-	.bg{
-		
-		padding: 5px;
-	}
+.navigation ul li a{
+    color: white;
+}
 
 /*POSITIONING*/
 
 .static{
-	/*Static is the default and will just stack*/
+/*Static is the default and will just stack*/
 	position: static;
 }
 
@@ -293,6 +221,215 @@
 	position: relative;
 }
 
+/*RESPONSIVE DESIGN*/
 
 
+/*MOBILE RESPONSIVE*/
 
+@media all and (min-width: 320px) {
+
+.hideM{
+	display: none;
+}
+
+.col12{
+	width: 100%;
+}
+
+.col11{
+	width: 91.66%;
+}
+
+.col10{
+	width: 83.33%;
+}
+
+.col9{
+	width: 75%;
+}
+
+.col8{
+	width: 66.66%;
+}
+
+.col7{
+	width: 58.33%;
+}
+
+.col6{
+	width: 50%;
+}
+
+.col5{
+	width: 41.66%;
+}
+
+.col4{
+	width: 33.33%;
+}
+
+.col3{
+	width: 25%;
+}
+
+.col2{
+	width: 16.67%;
+}
+
+.col1{
+	width: 8.33%;
+}
+
+
+}
+
+
+/*TABLET RESPONSIVE*/
+
+@media all and (min-width: 960px){
+
+.hideT{
+display: none;
+}
+
+.colT1{
+width: 8.33%;
+}
+
+.colT2{
+width: 16.67%;
+}
+
+.colT3{
+width: 25%;
+}
+
+.colT4{
+width: 33.33%;
+}
+
+.colT5{
+width: 41.66%;
+}
+
+.colT6{
+width: 50%;
+}
+
+.colT7{
+width: 58.33%;
+}
+
+.colT8{
+width: 66.66%;
+}
+
+.colT9{
+width: 75%;
+}
+
+.colT10{
+width: 83.33%;
+}
+
+.colT11{
+width: 91.66%;
+}
+
+.colT12{
+width: 100%;
+}
+
+/*DESKTOP RESPONSIVE*/
+
+@media all and (min-width: 992px) {
+
+.colD12{
+width: 100%;
+}
+
+.colD11{
+width: 91.66%;
+}
+
+.colD10{
+width: 83.33%;
+}
+
+.colD9{
+width: 75%;
+}
+
+.colD8{
+width: 66.66%;
+}
+
+.colD7{
+width: 58.33%;
+}
+
+.colD6{
+width: 50%;
+}
+
+.colD5{
+width: 41.66%;
+}
+
+.colD4{
+width: 33.33%;
+}
+
+.colD3{
+width: 25%;
+}
+
+.colD2{
+width: 16.67%;
+}
+
+.colD1{
+width: 8.33%;
+}
+
+.navigation{
+   	display: inline-block;
+	top: 0;
+	width: 100%;
+    background-color: white;
+}
+
+.navigation ul:after{
+    display: inline-block;
+    content: '';
+    clear: both;
+}
+
+.navigation ul li{
+	display: inline-block;
+    float: right;
+    width: 10%;
+    text-align: center;
+    top: 0;
+    right: 0;
+}
+
+.navigation ul li a{
+    color: black;
+}
+
+.logo{
+	position: absolute;
+	left: 0;
+	padding: 15px;
+}
+
+.banner{
+	display: inline-block;
+	width: 50%;
+	height:150px;
+	position: relative;
+	text-align: center;
+	top: 0;
+	left: 0;
+}

@@ -115,6 +115,7 @@
 	width: 8.33%;
 }
 
+
 /*ROW*/
 
 .row:after {
@@ -123,47 +124,55 @@
 	content: '';
 }
 
-/*Working on percentages is important for responsive design*/
 
-/*RESPONSIVE DESIGN*/
 
-.box{
-	height: 100px;
+/*NAVIGATON*/
+
+.banner{
+	position: relative;
+	text-align: center;
+}
+
+.navigation{
+	position: absolute;
 	width: 100%;
-	float: left;
 }
 
-.logo{
-	width: 20%;
+.navigation ul{
+    list-style: none;
+    text-decoration: none;
 }
 
-.nav{
-	width: 50%;
+.navigation ul:after{
+    display: block;
+    content: '';
+    clear: both;
 }
 
-.box3{
-	width: 30%;
+.navigation ul li{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding-top: 30px;
 }
+
+.navigation ul li a{
+    color: white;
+}
+
 
 .text p {
-	width: 1000px;
 	text-align: left;
 	margin: 0 auto;
 }
 
-.banner{
-	height:400px;
-	position: relative;
-	left: 0;
-}
-
-.content{
-	position: absolute;
-	bottom: 30px;
-	left: 90px;
+h3 {
+	text-align: center;
+	text-transform: uppercase;
 }
 
 
+/*RESPONSIVE DESIGN*/
 
 @media screen and (max-width:800px){
 
@@ -171,24 +180,6 @@
 		background-color: white;
 	}
 
-	.box{
-		float: none;
-		width: 100%;
-	}
-
-	.logo{
-		width: 100%;
-	}
-
-	.box3{
-		width: 100%;
-	}
-
-	.text p {
-		width: 600px;
-		text-align: left;
-		margin: 0 auto;
-	}
 
 	.colS12{
 	width: 100%;
@@ -238,17 +229,6 @@
 		width: 8.33%;
 	}
 
-	.nav{
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-	}
-
-	.content{
-		left: auto;
-		right: 80px;
-	}	
 
 
 }
